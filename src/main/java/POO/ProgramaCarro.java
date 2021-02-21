@@ -7,8 +7,26 @@ public class ProgramaCarro {
         boolean saidaPrimeiroLoot = true;
         boolean saidaSegundaLoot = true;
         Scanner scan = new Scanner(System.in);
-        Carro car = new Carro();
         int scanResult;
+        Carro car;
+        String marca;
+        String modelo;
+        int ano;
+        String variante;
+
+        System.out.println("Qual a marca do carro? ");
+        marca = scan.next();
+        System.out.println("Qual o modelo?");
+        modelo = scan.next();
+        System.out.println("Qual o ano?");
+        ano = scan.nextInt();
+        System.out.println("Qual a variante?");
+        variante = scan.next();
+
+        car = new Carro(marca, modelo, ano, variante);
+
+        System.out.println(String.format("O carro é um %s, da marca %s, do ano %d e da variante %s.", car.getModelo(), car.getMarca(), car.getAno(), car.getVariante()));
+
 
         do {
             while (saidaPrimeiroLoot){
