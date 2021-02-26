@@ -27,12 +27,13 @@ pmd {
     ignoreFailures = true
     toolVersion = "6.31.0"
     ruleSetFiles = files("config/pmd/ruleSet.xml")
-//    ruleSets = ["category/java/errorprone.xml", "category/java/bestpractices.xml"]
+//    ruleSets = ["category/java/error's.xml", "category/java/bestpractices.xml"]
 }
 
 checkstyle {
     toolVersion = "8.40"
     showViolations = true
+    ignoreFailures = true
     configFile = file("config/checkstyle/checkstyle.xml")
 }
 
