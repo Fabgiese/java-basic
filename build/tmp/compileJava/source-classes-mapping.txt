@@ -1,6 +1,16 @@
+Funcionarios/Atendente.java
+ Funcionarios.Atendente
 Carros/ProgramaCarro.java
  Carros.ProgramaCarro
 Tests.java
  Tests
+Funcionarios/Gerente.java
+ Funcionarios.Gerente
+Funcionarios/Program002.java
+ Funcionarios.Program002
+Funcionarios/Supervisor.java
+ Funcionarios.Supervisor
 Carros/Carro.java
  Carros.Carro
+Funcionarios/Funcionarios.java
+ Funcionarios.Funcionarios
