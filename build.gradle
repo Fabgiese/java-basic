@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'pmd'
+    id 'checkstyle'
 }
 
 group 'com.tests'
@@ -19,3 +21,23 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+pmd {
+    consoleOutput = true
+    ignoreFailures = true
+    toolVersion = "6.31.0"
+    ruleSetFiles = files("config/pmd/ruleSet.xml")
+//    ruleSets = ["category/java/errorprone.xml", "category/java/bestpractices.xml"]
+}
+
+checkstyle {
+    toolVersion = "8.40"
+    showViolations = true
+    configFile = file("config/checkstyle/checkstyle.xml")
+}
+
+
+
+
+
+
